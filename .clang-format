@@ -1,0 +1,69 @@
+---
+BasedOnStyle: LLVM
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+ColumnLimit: 110
+MaxEmptyLinesToKeep: 2
+
+Language: Cpp
+Standard: c++11
+
+# alignment overrides
+AlignArrayOfStructures: Right
+AlignAfterOpenBracket: BlockIndent
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: false
+  PadOperators: true
+AlignConsecutiveBitFields:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: false
+  PadOperators: false
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: false
+  PadOperators: true
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: false
+  PadOperators: false
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCaseColons: false
+AlignEscapedNewlines: Left
+
+# pointer alignment
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+# regroup includes
+IncludeBlocks: Regroup
+
+# no binpacking
+BinPackArguments: false
+BinPackParameters: "OnePerLine"
+ExperimentalAutoDetectBinPacking: false
+BreakStringLiterals: false
+
+# misc
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortBlocksOnASingleLine: Empty
+KeepEmptyLinesAtTheStartOfBlocks: false
+SpacesBeforeTrailingComments: 2
+IndentCaseLabels: true
+IndentPPDirectives: BeforeHash
+
+# this eats itself if it's true so we disable it
+Cpp11BracedListStyle: false
